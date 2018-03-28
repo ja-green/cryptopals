@@ -25,14 +25,14 @@
 
 package set1
 
+import "strings"
+
 // This is an approximate character frequency array of the English language.
 // It is used to determine which plaintext is closest to being English text. The
 // table maps character to frequency, a number between 0 and 1 with each index referring
 // to a character in alphabetical order and the last index referring to a space character.
 // Note that this table implicitly assumes an ASCII representation of the english language.
 var (
-	index = 0
-	index2 = 0
 	CHAR_FREQ_EXP = [27]float64{
 		0.0651738, 0.0124248, 0.0217339, 0.0349835,
 		0.1041442, 0.0197881, 0.0158610, 0.0492888,
@@ -54,8 +54,7 @@ func Challenge3(s string) string {
 			xorkey[j] = byte(97 + i)
 		}
 
-		hex_result 		:= Challenge2(string(HexEncode([]byte(s))), string(HexEncode(xorkey)))
-		//hex_result 		:= Challenge2(strings.ToLower(s), string(HexEncode(xorkey)))
+		hex_result 		:= Challenge2(strings.ToLower(s), string(HexEncode(xorkey)))
 		plain_result 	:= string(HexDecode([]byte(hex_result)))
 
 		chisq := ChiSq(plain_result)
