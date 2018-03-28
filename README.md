@@ -39,4 +39,4 @@ $ cryptopals [set number] [challenge number]
 
 ## License
 
-This project is licensed under the APACHE 2.0 License - see [LICENSE](https://github.com/ja-green/cryptopals/LICENSE) for details
+This project is licensed under the APACHE 2.0 License - see [LICENSE](https://github.com/jagreen/cryptopals/blob/master/LICENSE) for details
