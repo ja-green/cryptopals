@@ -2,7 +2,7 @@
 
 My solutions to the [Matasano Cryptography Challenges](https://cryptopals.com)
 
-These solutions arev written in Go and are intended to be well designed and efficient examples of Go code.
+These solutions are written in Go and are intended to be well designed and efficient examples of Go code.
 
 ## Completed
 
